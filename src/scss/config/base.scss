@@ -1,0 +1,26 @@
+@import "../config/mixins-media.scss";
+@import "../config/vars";
+
+
+.body {
+  background-color: #131212;
+
+  &.lock {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+.container {
+  width: min(100% - 16px, 1462px);
+  margin-inline: auto;
+
+  @include md-min {
+    width: min(100% - 40px, 1462px);
+
+  }
+
+  @include lg-min {
+    width: min(100% - 48px, 1462px);
+  }
+}

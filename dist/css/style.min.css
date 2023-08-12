@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/** Общие параметры, шаблоны(заготовки) и вспомогательные классы */
+/* ul */
+/* xl */
+/* lg */
+/* md */
+/* sm */
+/* xs */
+/* xx */
+/* ux */
+.body {
+  background-color: #131212;
+}
+.body.lock {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.container {
+  width: min(100% - 16px, 1462px);
+  margin-inline: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: min(100% - 40px, 1462px);
+  }
+}
+@media (min-width: 990px) {
+  .container {
+    width: min(100% - 48px, 1462px);
+  }
+}
+
+/** Подключение шрифтов локально из папки "./src/fonts" */
+/** Подключение переменных */
+/** Подключение sass mixins стилей */
+/* ul */
+/* xl */
+/* lg */
+/* md */
+/* sm */
+/* xs */
+/* xx */
+/* ux */
+/* Шаблоны (заготовки)
+* @extend %имя шаблона;
+*/
+/** Обнуление */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+sup {
+  color: inherit;
+}
+
+/**
+	* Библиотеки
+	* раскомментировать для использования
+	*/
+/** Подключение стилей отдельных блоков и секций */
+.header__container {
+  padding-top: 16px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.header__logoImg {
+  max-width: 56px;
+}
+.header__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  line-height: 29px;
+  letter-spacing: 0.1px;
+}
+.header__bannerImg {
+  margin-left: -14px;
+  max-width: 100%;
+  height: auto;
+}
+.header__desc {
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 21px;
+  margin-bottom: 24px;
+  letter-spacing: 0.1px;
+}
+.header__btn {
+  background-color: #FC3232;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 auto;
+  display: flex;
+  padding: 14px;
+  border-radius: 5px;
+}
+
+.actions__facebook {
+  display: none;
+}
+.actions__telegram {
+  display: none;
+}
+.actions__registration {
+  color: #ffffff;
+  font-weight: 600;
+  display: none;
+}
+.actions__enter {
+  font-weight: 500;
+  min-width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  padding: 10px;
+  color: #ffffff;
+}

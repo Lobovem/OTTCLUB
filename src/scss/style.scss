@@ -1,0 +1,30 @@
+@use 'sass:math';
+/** Общие параметры, шаблоны(заготовки) и вспомогательные классы */
+@import 'config/base';
+
+/** Подключение шрифтов локально из папки "./src/fonts" */
+@import 'config/fonts';
+
+/** Подключение переменных */
+@import 'config/vars';
+
+/** Подключение sass mixins стилей */
+@import 'config/mixins';
+@import 'config/mixins-media';
+
+@import 'config/patternSelectors';
+
+/** Обнуление */
+@import 'config/reset';
+
+/**
+	* Библиотеки
+	* раскомментировать для использования
+	*/
+// @import 'libs/aos';
+// @import 'libs/swiper';
+
+
+/** Подключение стилей отдельных блоков и секций */
+@import 'components/header';
+@import 'components/footer';

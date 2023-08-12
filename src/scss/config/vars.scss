@@ -1,0 +1,25 @@
+//colors
+$colorAccent: #ebbc44;
+$colorBlack: #000000;
+$colorWhite: #ffffff;
+$colorMain: #131212;
+$colorAccent: #FC3232;
+
+//fonts settings
+$fontFamilyMain: 'Inter', sans-serif; // !указать здесь основное семейство шрифта
+$fontWeightMain: 400; // Жирность шрифта по умолчанию
+$fontColorMain: $colorBlack; // Цвет шрифта по умолчанию
+$fontSizeMain: 16; // Размер шрифта по умолчанию
+
+
+$transitionMain: all 280ms ease-in-out 0ms;
+
+//media screen
+$ul: 1920px;
+$xl: 1440px;
+$lg: 990px;
+$md: 768px;
+$sm: 620px;
+$xs: 480px;
+$xx: 375px;
+$ux: 320px;
