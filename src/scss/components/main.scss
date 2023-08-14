@@ -4,12 +4,10 @@
   &__container {
     display: none;
 
-
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    margin-bottom: 80px;
-
     @include md-min {
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      margin-bottom: 80px;
       display: grid;
       gap: 20px;
     }
@@ -116,4 +114,58 @@
 
     }
   }
+}
+
+
+.benefits {
+
+  &__container {
+    position: relative;
+    border: 2px solid $colorRed;
+    border-radius: 20px;
+    padding: 16px;
+  }
+
+  &__decor {
+    position: absolute;
+    border-radius: 40px;
+    padding: 30px;
+    top: -28px;
+    max-width: 80px;
+    border: 2px solid $colorRed;
+    clip-path: circle(65% at 50% 0);
+    background-color: #555555;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__img {
+    position: absolute;
+    max-width: 40px;
+    height: auto;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  &__wrap {}
+
+  &__titleWrap {}
+
+  &__title {}
+
+  &__desc {}
+
+  &__textWrap {}
+
+  &__list {}
+
+  &__listItem {}
+
+  &__form {}
+
+  &__email {}
+
+  &__btn {}
 }
