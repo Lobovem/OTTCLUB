@@ -1133,6 +1133,7 @@ sup {
 @media (min-width: 768px) {
   .screens__container {
     padding-top: 20px;
+    margin-bottom: 80px;
   }
 }
 @media (min-width: 1440px) {
@@ -1360,4 +1361,20 @@ sup {
     width: 530px;
     min-height: 84px;
   }
+}
+
+.logo__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .logo__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.logo__img {
+  width: 100%;
 }

@@ -1,0 +1,19 @@
+.logo {
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 16px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include md-min {
+      grid-template-columns: repeat(4, 1fr);
+
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
