@@ -3,14 +3,36 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px 16px;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
 
     margin-bottom: 40px;
 
+    @include xx-min {
+      margin-bottom: 50px;
+    }
+
     @include md-min {
       grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 70px;
+      gap: 40px;
+    }
+
+    @include lg-min {
+      margin-bottom: 90px;
+      gap: 60px;
+
+    }
+
+    @include xl-min {
+      gap: 100px;
+
+    }
+
+    @include ul-min {
+      margin-bottom: 120px;
+      gap: 140px;
 
     }
   }
