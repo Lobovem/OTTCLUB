@@ -143,6 +143,9 @@ sup {
 	* раскомментировать для использования
 	*/
 /** Подключение стилей отдельных блоков и секций */
+.header {
+  overflow-x: hidden;
+}
 .header__container {
   padding-top: 16px;
 }
@@ -175,15 +178,23 @@ sup {
     max-width: 64px;
   }
 }
+@media (min-width: 990px) {
+  .header__logoImg {
+    max-width: 72px;
+  }
+}
+@media (min-width: 1920px) {
+  .header__logoImg {
+    min-width: 96px;
+  }
+}
 .header__bannerInner {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   grid-template-areas: "title" "photo" "desc" "btn";
 }
 @media (min-width: 768px) {
   .header__bannerInner {
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "title photo" "desc photo" "btn photo";
   }
 }
@@ -203,6 +214,7 @@ sup {
   .header__title {
     font-size: 28px;
     line-height: 34px;
+    letter-spacing: 0.3px;
   }
 }
 @media (min-width: 768px) {
@@ -211,6 +223,26 @@ sup {
     line-height: 38px;
     margin-bottom: 24px;
     text-align: left;
+    min-width: 410px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 990px) {
+  .header__title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+@media (min-width: 1440px) {
+  .header__title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 1920px) {
+  .header__title {
+    font-size: 56px;
+    line-height: 68px;
   }
 }
 .header__bannerImg {
@@ -228,6 +260,7 @@ sup {
 @media (min-width: 768px) {
   .header__bannerImg {
     padding-right: 0;
+    min-width: 500px;
   }
 }
 .header__desc {
@@ -249,6 +282,24 @@ sup {
     font-size: 17px;
     margin-bottom: 34px;
     text-align: left;
+  }
+}
+@media (min-width: 990px) {
+  .header__desc {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media (min-width: 1440px) {
+  .header__desc {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media (min-width: 1920px) {
+  .header__desc {
+    font-size: 26px;
+    line-height: 36px;
   }
 }
 .header__btn {
@@ -274,7 +325,27 @@ sup {
 }
 @media (min-width: 768px) {
   .header__btn {
-    width: 343px;
+    width: 342px;
+    min-height: 56px;
+    margin: 0;
+  }
+}
+@media (min-width: 990px) {
+  .header__btn {
+    font-size: 18px;
+    width: 368px;
+  }
+}
+@media (min-width: 1440px) {
+  .header__btn {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1920px) {
+  .header__btn {
+    font-size: 26px;
+    width: 530px;
+    min-height: 84px;
   }
 }
 
@@ -310,6 +381,11 @@ sup {
     padding-left: 24px;
   }
 }
+@media (min-width: 1920px) {
+  .actions__registration {
+    font-size: 20px;
+  }
+}
 .actions__enter {
   font-weight: 500;
   min-height: 40px;
@@ -325,5 +401,12 @@ sup {
 @media (min-width: 768px) {
   .actions__enter {
     min-height: 44px;
+  }
+}
+@media (min-width: 1920px) {
+  .actions__enter {
+    font-size: 20px;
+    min-height: 60px;
+    width: 126px;
   }
 }
