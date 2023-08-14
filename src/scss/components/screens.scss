@@ -4,7 +4,7 @@
 
   &__container {
     padding-top: 16px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 
     @include xx-min {
       padding-top: 44px;
@@ -47,37 +47,19 @@
     }
   }
 
-  &__logo {}
-
-  &__logoImg {
-    max-width: 56px;
-
-    @include md-min {
-      max-width: 64px;
-    }
-
-    @include lg-min {
-      max-width: 72px;
-    }
-
-    @include ul-min {
-      min-width: 96px;
-    }
-  }
-
 
 
   &__bannerInner {
     display: grid;
     grid-template-areas:
       "title"
-      "photo"
       "desc"
+      "photo"
       "btn";
 
     @include md-min {
       // align-items: center;
-      grid-template-columns: repeat(2, 60% 40%);
+      grid-template-columns: repeat(2, 65% 35%);
       grid-template-areas:
         "title photo"
         "desc photo"
@@ -86,7 +68,11 @@
     }
 
     @include lg-min {
-      grid-template-columns: repeat(2, 52% 48%);
+      grid-template-columns: repeat(2, 60% 40%);
+    }
+
+    @include xl-min {
+      grid-template-columns: repeat(2, 50% 50%);
 
     }
   }
@@ -98,12 +84,14 @@
 
   &__title {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     color: $colorWhite;
     text-align: center;
-    line-height: 29px;
+    line-height: 32px;
     letter-spacing: 0.1px;
     grid-area: title;
+    opacity: 0.9;
+    margin-bottom: 20px;
 
 
     @include xx-min {
@@ -118,8 +106,7 @@
       font-size: 32px;
       line-height: 38px;
       text-align: left;
-
-      align-self: end;
+      align-self: start;
     }
 
     @include lg-min {
@@ -129,23 +116,23 @@
     }
 
     @include xl-min {
-      font-size: 42px;
-      line-height: 50px;
+      font-size: 40px;
+      line-height: 56px;
       margin-bottom: 16px;
 
     }
 
     @include ul-min {
-      font-size: 56px;
-      line-height: 68px;
+      font-size: 52px;
+      line-height: 72px;
     }
   }
 
   &__bannerImg {
-    margin-left: -14px;
     max-width: 100%;
     height: auto;
     grid-area: photo;
+    margin-bottom: 30px;
 
 
     @include xx-min {
@@ -155,7 +142,8 @@
 
     @include md-min {
       padding-right: 0;
-      min-width: 530px;
+      min-width: 450px;
+      margin-bottom: 0;
     }
 
     @include lg-min {
@@ -163,13 +151,9 @@
       margin-left: 20px;
     }
 
-    @include xl-min {
-      min-width: 660px;
-
-    }
 
     @include ul-min {
-      min-width: 900px;
+      min-width: 790px;
     }
   }
 
@@ -182,39 +166,38 @@
     margin-bottom: 24px;
     letter-spacing: 0.1px;
     grid-area: desc;
+    opacity: 0.8;
 
 
     @include xx-min {
       font-size: 16px;
+      line-height: 24px;
     }
 
     @include md-min {
-      font-size: 17px;
       margin-bottom: 20px;
       text-align: left;
-      align-self: center;
-      min-width: 415px;
+      align-self: start;
+      min-width: 460px;
       margin-right: 10px;
 
     }
 
     @include lg-min {
-      font-size: 18px;
-      line-height: 26px;
       margin-bottom: 10px;
-
+      margin-right: 0px;
 
     }
 
     @include xl-min {
-      font-size: 20px;
-      line-height: 28px;
       margin-bottom: 26px;
+      max-width: 490px;
     }
 
     @include ul-min {
-      font-size: 26px;
-      line-height: 36px;
+      font-size: 20px;
+      line-height: 30px;
+      max-width: 610px;
 
     }
   }
@@ -224,7 +207,7 @@
     background-color: $colorAccent;
     color: $colorWhite;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0 auto;
     display: flex;
     padding: 14px;

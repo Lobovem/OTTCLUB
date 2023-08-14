@@ -47,7 +47,6 @@
     }
   }
 
-  &__logo {}
 
   &__logoImg {
     max-width: 56px;
@@ -65,7 +64,6 @@
     }
   }
 
-  &__actions {}
 
 
   &__bannerInner {
@@ -183,6 +181,8 @@
     margin-bottom: 24px;
     letter-spacing: 0.1px;
     grid-area: desc;
+    opacity: 0.8;
+
 
 
     @include xx-min {

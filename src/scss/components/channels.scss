@@ -3,9 +3,11 @@
 
   &__container {
     padding-top: 80px;
+    margin-bottom: 20px;
 
     @include md-min {
       padding-top: 120px;
+      margin-bottom: 60px;
     }
 
     @include ul-min {
@@ -134,8 +136,11 @@
 
     }
 
-    @include lg-min {
+    @include lg-min {}
+
+    @include xl-min {
       gap: 15px;
+
     }
 
     @include ul-min {
@@ -211,9 +216,14 @@
       // margin-bottom: 30px;
     }
 
-    @include xl-min {
+    @include lg-min {
       grid-template-columns: repeat(5, 1fr);
-      gap: 50px 32px;
+      gap: 32px 24px;
+
+    }
+
+    @include xl-min {
+      gap: 32px 50px;
 
     }
 
@@ -260,7 +270,7 @@
   &__item-h {}
 
   &__item-ictv {
-    @include lg-min {
+    @include xl-min {
       display: block;
     }
   }
