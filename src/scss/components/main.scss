@@ -7,7 +7,7 @@
     @include md-min {
       grid-template-columns: repeat(4, 1fr);
       align-items: center;
-      margin-bottom: 80px;
+      margin-bottom: 120px;
       display: grid;
       gap: 20px;
     }
@@ -19,11 +19,13 @@
 
     @include xl-min {
       gap: 46px;
+      margin-bottom: 140px;
 
     }
 
     @include ul-min {
       gap: 60px;
+      margin-bottom: 180px;
 
     }
   }
@@ -123,49 +125,259 @@
     position: relative;
     border: 2px solid $colorRed;
     border-radius: 20px;
-    padding: 16px;
+    padding: 60px 16px 32px 16px;
+
+    @include md-min {
+      padding: 80px 76px 36px 76px;
+      border-radius: 12px;
+
+    }
+
+    @include lg-min {
+      max-width: 800px; //TODO check out container
+    }
+
+    @include xl-min {
+      padding-bottom: 60px;
+      max-width: 862px;
+    }
+
+    @include ul-min {
+      max-width: 1150px;
+      padding: 100px 194px 80px 194px;
+    }
+
+
   }
 
   &__decor {
     position: absolute;
     border-radius: 40px;
-    padding: 30px;
-    top: -28px;
+    padding: 36px;
+    top: -41px;
     max-width: 80px;
-    border: 2px solid $colorRed;
-    clip-path: circle(65% at 50% 0);
-    background-color: #555555;
+    border: 2px solid #FF1F1F;
+    clip-path: circle(72% at 50% 0);
+    background-color: #131212;
     left: 50%;
     transform: translateX(-50%);
+
+    @include xl-min {
+      border-radius: 50px;
+      padding: 44px;
+      top: -49px;
+    }
+
+    @include ul-min {
+      border-radius: 60px;
+      padding: 54px;
+      clip-path: circle(65% at 50% 0);
+    }
   }
 
   &__img {
     position: absolute;
     max-width: 40px;
     height: auto;
-    top: -14px;
+    top: -20px;
     left: 50%;
     transform: translateX(-50%);
 
+    @include md-min {
+      max-width: 46px;
+    }
+
+    @include lg-min {
+      max-width: 50px;
+    }
+
+    @include xl-min {
+      max-width: 54px;
+      top: -26px;
+
+    }
+
+    @include ul-min {
+      max-width: 72px;
+    }
   }
 
-  &__wrap {}
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include md-min {
+      flex-direction: row;
+      margin-bottom: 20px;
+      justify-content: space-around;
+    }
+
+    @include xl-min {
+      justify-content: center;
+      gap: 80px;
+    }
+
+    @include ul-min {
+      justify-content: space-between;
+    }
+  }
 
   &__titleWrap {}
 
-  &__title {}
+  &__title {
+    text-align: center;
+    margin-bottom: 16px;
+    color: $colorWhiteLight;
 
-  &__desc {}
+    span {
+      font-size: 67px;
+      line-height: 67px;
+      color: $colorRed;
+      font-weight: 600;
+
+      @include ul-min {
+        font-size: 90px;
+        line-height: 90px;
+      }
+    }
+
+    @include ul-min {
+      font-size: 20px;
+    }
+
+
+  }
+
+  &__desc {
+    text-align: center;
+    margin-bottom: 20px;
+    color: $colorWhite;
+    max-width: 200px;
+    font-size: 15px;
+    line-height: 21px;
+    Opacity: 80%;
+
+    @include md-min {
+      max-width: 200px;
+      font-size: 16px;
+
+    }
+  }
 
   &__textWrap {}
 
   &__list {}
 
-  &__listItem {}
+  &__listItem {
+    font-size: 15px;
+    line-height: 18px;
+    color: $colorWhite;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    font-weight: 500;
 
-  &__form {}
+    background-image: url(../../images/icon-tick.svg);
+    background-position: 0px -2px;
+    background-size: 24px;
+    background-repeat: no-repeat;
 
-  &__email {}
+    @include lg-min {
+      font-size: 18px;
+      line-height: 22px;
+    }
 
-  &__btn {}
+    @include xl-min {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 400;
+    }
+
+    @include ul-min {
+      font-size: 26px;
+      line-height: 32px;
+      background-size: 32px;
+      padding-left: 54px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include md-min {
+      justify-content: center;
+      flex-direction: row;
+    }
+  }
+
+  &__email {
+    background-color: $colorGrey ;
+    width: 100%;
+    height: 54px;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: capitalize;
+    opacity: 90%;
+    margin-bottom: 16px;
+    margin-top: 16px;
+
+    @include md-min {
+      border-radius: 5px 0 0 5px;
+      margin-bottom: 0;
+      margin-top: 0;
+      font-size: 17px;
+      width: 300px;
+    }
+
+    @include lg-min {
+      width: 330px;
+      font-size: 18px;
+
+    }
+
+    @include ul-min {
+      font-size: 22px;
+      height: 69px;
+      width: 400px;
+    }
+
+
+  }
+
+  &__btn {
+    width: 100%;
+    height: 54px;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: $colorRed;
+    color: $colorWhite;
+
+    @include md-min {
+      border-radius: 0 5px 5px 0;
+      font-size: 17px;
+      width: 226px;
+
+    }
+
+    @include lg-min {
+      width: 250px;
+      font-size: 18px;
+
+    }
+
+    @include xl-min {
+      width: 270px;
+    }
+
+    @include ul-min {
+      font-size: 22px;
+      height: 69px;
+      width: 328px;
+    }
+  }
 }

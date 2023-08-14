@@ -9,7 +9,7 @@
 /* xx */
 /* ux */
 .body {
-  background-color: #555555;
+  background-color: #131212;
 }
 .body.lock {
   overflow: hidden;
@@ -153,7 +153,7 @@ sup {
 }
 .header__container {
   padding-top: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 @media (min-width: 375px) {
   .header__container {
@@ -163,7 +163,16 @@ sup {
 @media (min-width: 768px) {
   .header__container {
     padding-top: 20px;
-    margin-bottom: 44px;
+  }
+}
+@media (min-width: 1440px) {
+  .header__container {
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 1920px) {
+  .header__container {
+    margin-bottom: 200px;
   }
 }
 .header__inner {
@@ -467,7 +476,7 @@ sup {
   .peculiarities__container {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
     display: grid;
     gap: 20px;
   }
@@ -481,11 +490,13 @@ sup {
 @media (min-width: 1440px) {
   .peculiarities__container {
     gap: 46px;
+    margin-bottom: 140px;
   }
 }
 @media (min-width: 1920px) {
   .peculiarities__container {
     gap: 60px;
+    margin-bottom: 180px;
   }
 }
 .peculiarities__item {
@@ -576,25 +587,256 @@ sup {
   position: relative;
   border: 2px solid #FF1F1F;
   border-radius: 20px;
-  padding: 16px;
+  padding: 60px 16px 32px 16px;
+}
+@media (min-width: 768px) {
+  .benefits__container {
+    padding: 80px 76px 36px 76px;
+    border-radius: 12px;
+  }
+}
+@media (min-width: 990px) {
+  .benefits__container {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1440px) {
+  .benefits__container {
+    padding-bottom: 60px;
+    max-width: 862px;
+  }
+}
+@media (min-width: 1920px) {
+  .benefits__container {
+    max-width: 1150px;
+    padding: 100px 194px 80px 194px;
+  }
 }
 .benefits__decor {
   position: absolute;
   border-radius: 40px;
-  padding: 30px;
-  top: -28px;
+  padding: 36px;
+  top: -41px;
   max-width: 80px;
   border: 2px solid #FF1F1F;
-  clip-path: circle(65% at 50% 0);
-  background-color: #555555;
+  clip-path: circle(72% at 50% 0);
+  background-color: #131212;
   left: 50%;
   transform: translateX(-50%);
+}
+@media (min-width: 1440px) {
+  .benefits__decor {
+    border-radius: 50px;
+    padding: 44px;
+    top: -49px;
+  }
+}
+@media (min-width: 1920px) {
+  .benefits__decor {
+    border-radius: 60px;
+    padding: 54px;
+    clip-path: circle(65% at 50% 0);
+  }
 }
 .benefits__img {
   position: absolute;
   max-width: 40px;
   height: auto;
-  top: -14px;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%);
+}
+@media (min-width: 768px) {
+  .benefits__img {
+    max-width: 46px;
+  }
+}
+@media (min-width: 990px) {
+  .benefits__img {
+    max-width: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .benefits__img {
+    max-width: 54px;
+    top: -26px;
+  }
+}
+@media (min-width: 1920px) {
+  .benefits__img {
+    max-width: 72px;
+  }
+}
+.benefits__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .benefits__wrap {
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1440px) {
+  .benefits__wrap {
+    justify-content: center;
+    gap: 80px;
+  }
+}
+@media (min-width: 1920px) {
+  .benefits__wrap {
+    justify-content: space-between;
+  }
+}
+.benefits__title {
+  text-align: center;
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.8392156863);
+}
+.benefits__title span {
+  font-size: 67px;
+  line-height: 67px;
+  color: #FF1F1F;
+  font-weight: 600;
+}
+@media (min-width: 1920px) {
+  .benefits__title span {
+    font-size: 90px;
+    line-height: 90px;
+  }
+}
+@media (min-width: 1920px) {
+  .benefits__title {
+    font-size: 20px;
+  }
+}
+.benefits__desc {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  max-width: 200px;
+  font-size: 15px;
+  line-height: 21px;
+  Opacity: 80%;
+}
+@media (min-width: 768px) {
+  .benefits__desc {
+    max-width: 200px;
+    font-size: 16px;
+  }
+}
+.benefits__listItem {
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  font-weight: 500;
+  background-image: url(../../images/icon-tick.svg);
+  background-position: 0px -2px;
+  background-size: 24px;
+  background-repeat: no-repeat;
+}
+@media (min-width: 990px) {
+  .benefits__listItem {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 1440px) {
+  .benefits__listItem {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+@media (min-width: 1920px) {
+  .benefits__listItem {
+    font-size: 26px;
+    line-height: 32px;
+    background-size: 32px;
+    padding-left: 54px;
+  }
+}
+.benefits__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .benefits__form {
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+.benefits__email {
+  background-color: #e9e9ea;
+  width: 100%;
+  height: 54px;
+  padding: 16px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-transform: capitalize;
+  opacity: 90%;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .benefits__email {
+    border-radius: 5px 0 0 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 17px;
+    width: 300px;
+  }
+}
+@media (min-width: 990px) {
+  .benefits__email {
+    width: 330px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1920px) {
+  .benefits__email {
+    font-size: 22px;
+    height: 69px;
+    width: 400px;
+  }
+}
+.benefits__btn {
+  width: 100%;
+  height: 54px;
+  padding: 16px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #FF1F1F;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .benefits__btn {
+    border-radius: 0 5px 5px 0;
+    font-size: 17px;
+    width: 226px;
+  }
+}
+@media (min-width: 990px) {
+  .benefits__btn {
+    width: 250px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .benefits__btn {
+    width: 270px;
+  }
+}
+@media (min-width: 1920px) {
+  .benefits__btn {
+    font-size: 22px;
+    height: 69px;
+    width: 328px;
+  }
 }
