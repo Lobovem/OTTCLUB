@@ -7,6 +7,8 @@
  * Если мы хотим добавить модуль следует его раскомментировать
  */
 import { isWebp } from './modules';
+//import according module
+import { according } from './modules/accordion';
 
 // import AOS from 'aos'
 
@@ -16,6 +18,8 @@ import { isWebp } from './modules';
  ! (i) необходимо для корректного отображения webp из css
  */
 isWebp();
+//according function
+according();
 
 /* Добавление класса touch для HTML если браузер мобильный */
 // addTouchClass();
