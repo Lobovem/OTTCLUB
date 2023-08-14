@@ -12,15 +12,15 @@
 }
 
 .container {
-  width: min(100% - 16px, 1462px);
+  width: min(100% - 32px, 1462px);
   margin-inline: auto;
 
   @include md-min {
-    width: min(100% - 40px, 1462px);
+    width: min(100% - 80px, 1462px);
 
   }
 
   @include lg-min {
-    width: min(100% - 48px, 1462px);
+    width: min(100% - 96px, 1462px);
   }
 }
