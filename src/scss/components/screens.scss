@@ -1,0 +1,267 @@
+.screens {
+  overflow-x: hidden;
+
+
+  &__container {
+    padding-top: 16px;
+    margin-bottom: 80px;
+
+    @include xx-min {
+      padding-top: 44px;
+    }
+
+    @include md-min {
+      padding-top: 20px;
+    }
+
+    @include xl-min {
+      margin-bottom: 120px;
+    }
+
+    @include ul-min {
+      margin-bottom: 200px;
+    }
+
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    @include xx-min {
+      margin-bottom: 36px;
+    }
+
+    @include md-min {
+      margin-bottom: 10px;
+    }
+
+    @include lg-min {
+      margin-bottom: 30px;
+    }
+
+    @include xl-min {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__logo {}
+
+  &__logoImg {
+    max-width: 56px;
+
+    @include md-min {
+      max-width: 64px;
+    }
+
+    @include lg-min {
+      max-width: 72px;
+    }
+
+    @include ul-min {
+      min-width: 96px;
+    }
+  }
+
+
+
+  &__bannerInner {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "photo"
+      "desc"
+      "btn";
+
+    @include md-min {
+      // align-items: center;
+      grid-template-columns: repeat(2, 60% 40%);
+      grid-template-areas:
+        "title photo"
+        "desc photo"
+        "btn photo";
+
+    }
+
+    @include lg-min {
+      grid-template-columns: repeat(2, 52% 48%);
+
+    }
+  }
+
+  &__bannerWrap {
+    grid-area: wrap;
+
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: $colorWhite;
+    text-align: center;
+    line-height: 29px;
+    letter-spacing: 0.1px;
+    grid-area: title;
+
+
+    @include xx-min {
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: 0.4px;
+
+
+    }
+
+    @include md-min {
+      font-size: 32px;
+      line-height: 38px;
+      text-align: left;
+
+      align-self: end;
+    }
+
+    @include lg-min {
+      font-size: 38px;
+      line-height: 46px;
+
+    }
+
+    @include xl-min {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 16px;
+
+    }
+
+    @include ul-min {
+      font-size: 56px;
+      line-height: 68px;
+    }
+  }
+
+  &__bannerImg {
+    margin-left: -14px;
+    max-width: 100%;
+    height: auto;
+    grid-area: photo;
+
+
+    @include xx-min {
+      margin-left: 0;
+      padding-right: 40px;
+    }
+
+    @include md-min {
+      padding-right: 0;
+      min-width: 530px;
+    }
+
+    @include lg-min {
+      min-width: 590px;
+      margin-left: 20px;
+    }
+
+    @include xl-min {
+      min-width: 660px;
+
+    }
+
+    @include ul-min {
+      min-width: 900px;
+    }
+  }
+
+
+  &__desc {
+    font-size: 15px;
+    color: $colorWhite;
+    text-align: center;
+    line-height: 22px;
+    margin-bottom: 24px;
+    letter-spacing: 0.1px;
+    grid-area: desc;
+
+
+    @include xx-min {
+      font-size: 16px;
+    }
+
+    @include md-min {
+      font-size: 17px;
+      margin-bottom: 20px;
+      text-align: left;
+      align-self: center;
+      min-width: 415px;
+      margin-right: 10px;
+
+    }
+
+    @include lg-min {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 10px;
+
+
+    }
+
+    @include xl-min {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 26px;
+    }
+
+    @include ul-min {
+      font-size: 26px;
+      line-height: 36px;
+
+    }
+  }
+
+
+  &__btn {
+    background-color: $colorAccent;
+    color: $colorWhite;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    padding: 14px;
+    border-radius: 5px;
+    min-height: 49px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    grid-area: btn;
+
+
+    @include xx-min {
+      font-size: 17px;
+      min-height: 56px;
+    }
+
+    @include md-min {
+      width: 342px;
+      height: 56px;
+      margin: 0;
+    }
+
+    @include lg-min {
+      font-size: 18px;
+      width: 368px;
+    }
+
+    @include xl-min {
+      font-size: 20px;
+      width: 410px;
+      height: 64px;
+    }
+
+    @include ul-min {
+      font-size: 26px;
+      width: 530px;
+      min-height: 84px;
+    }
+  }
+}
