@@ -588,6 +588,7 @@ sup {
   border: 2px solid #FF1F1F;
   border-radius: 20px;
   padding: 60px 16px 32px 16px;
+  margin-bottom: 100px;
 }
 @media (min-width: 768px) {
   .benefits__container {
