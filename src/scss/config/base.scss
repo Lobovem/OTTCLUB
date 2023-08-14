@@ -3,7 +3,9 @@
 
 
 .body {
-  background-color: $colorMain;
+  // background-color: $colorMain;
+  background-color: #555555;
+
 
   &.lock {
     overflow: hidden;
@@ -22,5 +24,10 @@
 
   @include lg-min {
     width: min(100% - 96px, 1462px);
+  }
+
+  @include xl-min {
+    width: min(100% - 344px, 1462px);
+
   }
 }
