@@ -588,7 +588,6 @@ sup {
   border: 2px solid #FF1F1F;
   border-radius: 20px;
   padding: 60px 16px 32px 16px;
-  margin-bottom: 100px;
 }
 @media (min-width: 768px) {
   .benefits__container {
@@ -840,4 +839,249 @@ sup {
     height: 69px;
     width: 328px;
   }
+}
+
+.channels {
+  overflow: hidden;
+}
+.channels__container {
+  padding-top: 80px;
+}
+@media (min-width: 768px) {
+  .channels__container {
+    padding-top: 120px;
+  }
+}
+@media (min-width: 1920px) {
+  .channels__container {
+    padding-top: 160px;
+  }
+}
+.channels__title {
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+@media (min-width: 375px) {
+  .channels__title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .channels__title {
+    text-align: left;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 990px) {
+  .channels__title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .channels__title {
+    font-size: 40px;
+    line-height: 56px;
+  }
+}
+@media (min-width: 1920px) {
+  .channels__title {
+    font-size: 52px;
+    line-height: 72px;
+    margin-bottom: 30px;
+  }
+}
+.channels__decor {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+}
+.channels__desc {
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+@media (min-width: 375px) {
+  .channels__desc {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .channels__desc {
+    text-align: left;
+    margin-bottom: 36px;
+    max-width: 510px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 990px) {
+  .channels__desc {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1920px) {
+  .channels__desc {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 840px;
+    margin-bottom: 46px;
+  }
+}
+.channels__innerBtn {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 8px;
+}
+@media (min-width: 375px) {
+  .channels__innerBtn {
+    gap: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .channels__innerBtn {
+    margin-bottom: 40px;
+    gap: 24px;
+  }
+}
+@media (min-width: 990px) {
+  .channels__innerBtn {
+    gap: 15px;
+  }
+}
+@media (min-width: 1920px) {
+  .channels__innerBtn {
+    gap: 30px;
+    margin-bottom: 52px;
+  }
+}
+.channels__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 8px 16px;
+  width: 144px;
+  min-height: 40px;
+  color: #ffffff;
+  font-size: 15px;
+}
+.channels__btn_active {
+  background-color: #FC3232;
+  border: none;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .channels__btn {
+    width: 154px;
+    min-height: 48px;
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1920px) {
+  .channels__btn {
+    font-size: 20px;
+    line-height: 30px;
+    width: 194px;
+    min-height: 62px;
+    padding: 16px 24px;
+  }
+}
+.channels__wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 18px;
+}
+@media (min-width: 375px) {
+  .channels__wrap {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .channels__wrap {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .channels__wrap {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px 32px;
+  }
+}
+@media (min-width: 1920px) {
+  .channels__wrap {
+    gap: 50px 70px;
+  }
+}
+.channels__item {
+  width: 100%;
+}
+.channels__item-film {
+  display: none;
+}
+@media (min-width: 768px) {
+  .channels__item-film {
+    display: block;
+  }
+}
+.channels__item-tet {
+  display: none;
+}
+@media (min-width: 990px) {
+  .channels__item-tet {
+    display: block;
+  }
+}
+@media (min-width: 990px) {
+  .channels__item-ictv {
+    display: block;
+  }
+}
+.channels__item-m1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .channels__item-m1 {
+    display: block;
+  }
+}
+.channels__item-2plus2 {
+  display: none;
+}
+@media (min-width: 990px) {
+  .channels__item-2plus2 {
+    display: block;
+  }
+}
+.channels__showAll {
+  position: relative;
+  text-align: right;
+  padding-right: 30px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.channels__icon {
+  position: absolute;
+  top: -2px;
+  right: 0;
 }
