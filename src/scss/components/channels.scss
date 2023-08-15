@@ -2,15 +2,19 @@
   overflow: hidden;
 
   &__container {
-    padding-top: 80px;
+    padding-top: 100px;
     margin-bottom: 20px;
 
     @include md-min {
-      padding-top: 120px;
+      padding-top: 130px;
       margin-bottom: 60px;
     }
 
-    @include ul-min {
+    @include lg-min {
+      margin-bottom: 80px;
+    }
+
+    @include xl-min {
       padding-top: 160px;
     }
   }
@@ -33,7 +37,6 @@
     line-height: 34px;
     color: $colorWhite;
     margin-bottom: 10px;
-    //TODO check out decor position
 
     @include xx-min {
       font-size: 28px;
@@ -159,7 +162,6 @@
     padding: 8px 16px;
     width: 144px;
     min-height: 40px;
-    // margin-right: 8px;
     color: $colorWhite;
     font-size: 15px;
 
@@ -169,20 +171,12 @@
       font-size: 16px;
     }
 
-    @include xx-min {
-      // margin-right: 16px;
-    }
 
     @include md-min {
-      // margin-right: 24px;
       width: 154px;
       min-height: 48px;
       padding: 12px 18px;
       font-size: 16px;
-    }
-
-    @include lg-min {
-      // margin-right: 15px;
     }
 
     @include ul-min {
@@ -196,14 +190,9 @@
   }
 
   &__wrap {
-    // display: flex;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    // flex-direction: row;
-    // flex-wrap: wrap;
     gap: 18px;
-    // justify-content: center;
-    // align-items: center;
     margin-bottom: 18px;
 
     @include xx-min {
@@ -213,35 +202,26 @@
     @include md-min {
       grid-template-columns: repeat(4, 1fr);
       gap: 32px 24px;
-      // margin-bottom: 30px;
     }
 
     @include lg-min {
       grid-template-columns: repeat(5, 1fr);
       gap: 32px 24px;
-
     }
 
     @include xl-min {
       gap: 32px 50px;
-
     }
 
     @include ul-min {
       gap: 50px 70px;
-
     }
 
   }
 
   &__item {
-    // max-width: 84px;
     width: 100%;
-
-
   }
-
-
 
   &__item-1plus1 {}
 
@@ -294,6 +274,7 @@
 
   &__showAll {
     position: relative;
+    cursor: pointer;
     text-align: right;
     padding-right: 30px;
     color: $colorWhite;

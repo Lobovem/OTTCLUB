@@ -1,8 +1,8 @@
-.questions__wrapFirst>.questions__innerAcord:first-child .questions__accordTitle {
+.questions__left>.questions__innerAcord:first-child .questions__accordTitle {
   border: none;
 }
 
-.questions__wrapSecond>.questions__innerAcord:first-child .questions__accordTitle {
+.questions__right>.questions__innerAcord:first-child .questions__accordTitle {
   border: none; //TODO check out selectors
 }
 
@@ -13,13 +13,13 @@
     padding-bottom: 20px;
 
     @include xx-min {
-      padding-bottom: 60px;
+      padding-bottom: 40px;
       margin-bottom: 60px;
 
     }
 
     @include md-min {
-      padding-bottom: 20px;
+      // padding-bottom: 20px;
     }
 
     @include lg-min {
@@ -51,6 +51,7 @@
     color: $colorWhite;
     margin-bottom: 20px;
     text-align: center;
+    opacity: 0.9;
 
     @include xx-min {
       font-size: 30px;
@@ -89,7 +90,7 @@
     }
   }
 
-  &__wrapFirst {
+  &__left {
 
 
 
@@ -100,7 +101,7 @@
     }
   }
 
-  &__wrapSecond {
+  &__right {
     @include xl-min {
       display: flex;
       flex-direction: column;

@@ -69,11 +69,17 @@
     }
 
     @include lg-min {
-      grid-template-columns: repeat(2, 60% 40%);
+      grid-template-columns: repeat(2, 54% 46%);
+      gap: 0 40px;
     }
 
     @include xl-min {
       grid-template-columns: repeat(2, 50% 50%);
+
+    }
+
+    @include ul-min {
+      gap: 0 20px;
 
     }
   }
@@ -120,6 +126,8 @@
       font-size: 40px;
       line-height: 56px;
       margin-bottom: 16px;
+      align-self: end;
+
 
     }
 
@@ -179,7 +187,6 @@
       margin-bottom: 20px;
       text-align: left;
       align-self: start;
-      min-width: 460px;
       margin-right: 10px;
 
     }
@@ -192,7 +199,9 @@
 
     @include xl-min {
       margin-bottom: 26px;
-      max-width: 490px;
+      max-width: 520px;
+      align-self: center;
+
     }
 
     @include ul-min {
@@ -208,7 +217,6 @@
     background-color: $colorAccent;
     color: $colorWhite;
     font-size: 15px;
-    font-weight: 500;
     margin: 0 auto;
     display: flex;
     padding: 14px;

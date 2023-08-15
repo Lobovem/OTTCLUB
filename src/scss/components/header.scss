@@ -67,7 +67,7 @@
       "btn";
 
     @include md-min {
-      grid-template-columns: repeat(2, 60% 40%);
+      grid-template-columns: repeat(2, 62% 38%);
       grid-template-areas:
         "title photo"
         "desc photo"
@@ -176,7 +176,7 @@
       margin-bottom: 20px;
       text-align: left;
       align-self: start;
-      min-width: 415px;
+      // max-width: 440px;
       margin-right: 10px;
       margin-bottom: 0;
     }
