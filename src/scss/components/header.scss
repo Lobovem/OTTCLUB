@@ -3,21 +3,22 @@
 
   &__container {
     padding-top: 16px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 
     @include xx-min {
       padding-top: 24px;
-
     }
 
-    @include md-min {}
+    @include lg-min {
+      margin-bottom: 80px;
+    }
 
     @include xl-min {
       margin-bottom: 120px;
     }
 
     @include ul-min {
-      margin-bottom: 200px;
+      margin-bottom: 140px;
     }
   }
 

@@ -6,14 +6,20 @@
     border-radius: 20px;
     padding: 60px 16px 32px 16px;
 
+    @include xx-min {
+      padding: 60px 22px 32px 22px;
+
+    }
+
     @include md-min {
       padding: 80px 76px 36px 76px;
       border-radius: 12px;
-
     }
 
     @include lg-min {
       max-width: 800px; //TODO check out container
+      padding: 80px 120px 36px 120px;
+
     }
 
     @include xl-min {
@@ -26,7 +32,6 @@
       padding: 100px 194px 80px 194px;
     }
 
-
   }
 
   &__decor {
@@ -35,13 +40,13 @@
     padding: 36px;
     top: -41px;
     max-width: 80px;
-    border: 2px solid #FF1F1F;
+    border: 2px solid $colorRed;
     clip-path: circle(72% at 50% 0);
-    background-color: #131212;
+    background-color: $colorMain;
     left: 50%;
     transform: translateX(-50%);
 
-    @include xl-min {
+    @include lg-min {
       border-radius: 50px;
       padding: 44px;
       top: -49px;
@@ -67,14 +72,11 @@
     }
 
     @include lg-min {
-      max-width: 50px;
-    }
-
-    @include xl-min {
       max-width: 54px;
       top: -26px;
-
     }
+
+    @include xl-min {}
 
     @include ul-min {
       max-width: 72px;
@@ -86,11 +88,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 240px;
+    margin: 0 auto;
 
     @include md-min {
       flex-direction: row;
       margin-bottom: 20px;
       justify-content: space-around;
+      gap: 40px;
+      max-width: 100%;
+
+
+    }
+
+    @include lg-min {
+      justify-content: space-between;
     }
 
     @include xl-min {
@@ -125,8 +137,6 @@
     @include ul-min {
       font-size: 20px;
     }
-
-
   }
 
   &__desc {
@@ -136,12 +146,16 @@
     max-width: 200px;
     font-size: 15px;
     line-height: 21px;
-    Opacity: 80%;
+    Opacity: 0.8;
 
     @include md-min {
-      max-width: 200px;
       font-size: 16px;
+    }
 
+    @include ul-min {
+      font-size: 20px;
+      line-height: 28px;
+      max-width: 260px;
     }
   }
 
@@ -156,7 +170,6 @@
     margin-bottom: 20px;
     padding-left: 40px;
     font-weight: 500;
-
     background-image: url(../../images/icon-tick.svg);
     background-position: 0px -2px;
     background-size: 24px;
@@ -200,20 +213,24 @@
     border-radius: 5px;
     font-size: 15px;
     text-transform: capitalize;
-    opacity: 90%;
+    opacity: 0.9;
     margin-bottom: 16px;
     margin-top: 16px;
+
+    @include xx-min {
+      font-size: 17px;
+
+    }
 
     @include md-min {
       border-radius: 5px 0 0 5px;
       margin-bottom: 0;
       margin-top: 0;
-      font-size: 17px;
-      width: 300px;
+      width: 55%;
     }
 
     @include lg-min {
-      width: 330px;
+      // width: 330px;
       font-size: 18px;
 
     }
@@ -221,10 +238,8 @@
     @include ul-min {
       font-size: 22px;
       height: 69px;
-      width: 400px;
+      // width: 400px;
     }
-
-
   }
 
   &__btn {
@@ -235,28 +250,34 @@
     font-size: 15px;
     background-color: $colorRed;
     color: $colorWhite;
+    font-weight: 600;
+    font-size: 15px;
+
+    @include xx-min {
+      font-size: 18px;
+    }
 
     @include md-min {
       border-radius: 0 5px 5px 0;
       font-size: 17px;
-      width: 226px;
+      width: 45%;
+      font-weight: 500;
 
     }
 
     @include lg-min {
-      width: 250px;
+      // width: 250px;
       font-size: 18px;
-
     }
 
     @include xl-min {
-      width: 270px;
+      // width: 270px;
     }
 
     @include ul-min {
       font-size: 22px;
       height: 69px;
-      width: 328px;
+      // width: 328px;
     }
   }
 }
