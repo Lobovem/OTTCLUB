@@ -15,11 +15,6 @@
     @include xx-min {
       padding-bottom: 40px;
       margin-bottom: 60px;
-
-    }
-
-    @include md-min {
-      // padding-bottom: 20px;
     }
 
     @include lg-min {
@@ -91,9 +86,6 @@
   }
 
   &__left {
-
-
-
     @include xl-min {
       display: flex;
       flex-direction: column;
@@ -110,10 +102,7 @@
   }
 
   &__accordTitle {
-
-
     position: relative;
-    // z-index: -10;
     width: 100%;
     padding-top: 14px;
     padding-right: 50px;
@@ -125,12 +114,17 @@
     background-color: rgb(255 255 255 / 0%);
     font-size: 16px;
     line-height: 22px;
+    transition: 0.4s;
+
+    &:hover {
+      color: $colorAccent;
+    }
 
     &::before {
       position: absolute;
       top: 0;
       right: 0;
-      background-image: url(../../images/icon-down.svg);
+      background-image: url(../images/icon-down.svg);
       background-repeat: no-repeat;
 
       content: "";

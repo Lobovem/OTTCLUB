@@ -3,7 +3,7 @@
 @import 'config/base';
 
 /** Подключение шрифтов локально из папки "./src/fonts" */
-@import 'config/fonts';
+// @import 'config/fonts';
 
 /** Подключение переменных */
 @import 'config/vars';
@@ -16,14 +16,6 @@
 
 /** Обнуление */
 @import 'config/reset';
-
-/**
-	* Библиотеки
-	* раскомментировать для использования
-	*/
-// @import 'libs/aos';
-// @import 'libs/swiper';
-
 
 /** Подключение стилей отдельных блоков и секций */
 @import 'components/header';

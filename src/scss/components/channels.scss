@@ -1,5 +1,4 @@
 .channels {
-  // overflow: hidden;
   position: relative;
   z-index: 20;
 
@@ -152,8 +151,6 @@
     @include ul-min {
       width: 50px;
     }
-
-
   }
 
   &__desc {
@@ -205,8 +202,6 @@
 
     }
 
-    @include lg-min {}
-
     @include xl-min {
       gap: 15px;
 
@@ -230,11 +225,24 @@
     min-height: 40px;
     color: $colorWhite;
     font-size: 15px;
+    transition: 0.4s;
+    cursor: pointer;
+
+    &:hover {
+      border: 2px solid $colorAccent;
+      color: $colorAccent;
+    }
 
     &_active {
       background-color: $colorAccent;
       border: none;
       font-size: 16px;
+      transition: 0.4s;
+
+      &:hover {
+        border: none;
+        color: $colorWhite;
+      }
     }
 
 
@@ -319,11 +327,6 @@
     width: 100%;
   }
 
-  &__item-1plus1 {}
-
-  &__item-zoom {}
-
-  &__item-ukraine {}
 
   &__item-film {
     display: none;
@@ -340,10 +343,6 @@
       display: block;
     }
   }
-
-  &__item-inter {}
-
-  &__item-h {}
 
   &__item-ictv {
     @include xl-min {
@@ -366,7 +365,6 @@
       display: block;
     }
   }
-
 
   &__showAll {
     position: relative;
@@ -407,7 +405,6 @@
       @include xl-min {
         right: 30%;
       }
-
     }
   }
 

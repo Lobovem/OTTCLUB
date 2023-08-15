@@ -18,12 +18,10 @@
 
     @include md-min {
       left: -150px;
-      // height: 430px;
     }
 
     @include lg-min {
       left: -50px;
-      // height: 500px;
 
     }
 
@@ -53,7 +51,6 @@
 
     @include md-min {
       right: 20px;
-
     }
 
     @include lg-min {
@@ -66,8 +63,6 @@
     }
   }
 
-  &__container {}
-
   &__inner {
     @include sm-min {
       display: flex;
@@ -76,14 +71,9 @@
     }
   }
 
-  &__menu {}
-
-
   &__menuList {
     margin-bottom: 30px;
     position: relative;
-
-
 
     &::after {
       content: "";
@@ -112,13 +102,11 @@
         transform: rotateX(177deg);
         border-radius: 0;
       }
-
     }
 
     @include xx-min {
       columns: 2;
       margin-bottom: 40px;
-
     }
 
     @include lg-min {}
@@ -131,6 +119,11 @@
     line-height: 20px;
     opacity: 0.8;
     margin-bottom: 8px;
+    transition: 0.4s;
+
+    &:hover {
+      color: $colorAccent;
+    }
 
     @include xx-min {
       max-width: 160px;
@@ -149,7 +142,6 @@
       line-height: 24px;
       margin-bottom: 12px;
       max-width: 260px;
-
     }
   }
 
@@ -157,7 +149,6 @@
     font-weight: 600;
     color: $colorWhite;
     margin-bottom: 20px;
-
     position: relative;
 
     &::after {
@@ -174,9 +165,6 @@
       border-radius: 60px;
       z-index: -20;
 
-      @include xs-min {}
-
-
       @include md-min {
         width: 300px;
         left: -700px;
@@ -187,8 +175,6 @@
         left: -1400px;
         width: 400px;
       }
-
-      @include xl-min {}
     }
 
     @include xx-min {
@@ -199,7 +185,6 @@
       font-size: 20px;
       line-height: 28px;
     }
-
   }
 
   &__innerContacts {
@@ -207,7 +192,6 @@
 
     @include xx-min {
       margin-bottom: 40px;
-
     }
   }
 
@@ -219,14 +203,11 @@
       gap: 20px;
     }
 
-
     @include md-min {
       display: flex;
       flex-direction: column;
     }
   }
-
-  &__contacts {}
 
   &__tel {
     color: $colorWhite;
@@ -234,12 +215,16 @@
     margin-bottom: 12px;
     opacity: 0.8;
     display: block;
+    transition: 0.4s;
+
+    &:hover {
+      color: $colorAccent;
+    }
 
     @include ul-min {
       font-size: 18px;
       line-height: 26px;
     }
-
   }
 
   &__email {
@@ -249,6 +234,11 @@
     margin-bottom: 20px;
     opacity: 0.8;
     display: block;
+    transition: 0.4s;
+
+    &:hover {
+      color: $colorAccent;
+    }
 
     @include ul-min {
       font-size: 18px;
@@ -256,8 +246,6 @@
     }
 
   }
-
-  &__chat {}
 
   &__chatTitle {
     color: $colorWhite;
@@ -311,7 +299,6 @@
     gap: 16px 25px;
     justify-content: center;
     margin-bottom: 26px;
-
     position: relative;
 
     &::after {
@@ -413,11 +400,6 @@
       left: -14px;
       width: 6px;
       height: 6px;
-
     }
-
   }
-
-
-
 }

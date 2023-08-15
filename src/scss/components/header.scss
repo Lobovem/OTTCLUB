@@ -64,8 +64,6 @@
     }
   }
 
-
-
   &__inner {
     position: relative;
     display: flex;
@@ -101,10 +99,6 @@
     @include md-min {
       margin-bottom: 40px;
     }
-
-    @include lg-min {}
-
-    @include xl-min {}
   }
 
   &__bannerInner {
@@ -125,6 +119,7 @@
 
     @include lg-min {
       grid-template-columns: repeat(2, 52% 48%);
+
     }
   }
 
@@ -182,15 +177,10 @@
         filter: blur(200.5px);
       }
 
-      @include lg-min {}
-
       @include xl-min {
         width: 670px;
         height: 500px;
-
       }
-
-
     }
 
     &::before {
@@ -224,7 +214,6 @@
         width: 450px;
         height: 250px;
         top: 20%;
-
       }
     }
 
@@ -266,8 +255,6 @@
     height: auto;
     grid-area: photo;
     margin-bottom: 20px;
-
-
 
     @include xx-min {
       margin-left: 0;
@@ -314,7 +301,6 @@
       margin-bottom: 20px;
       text-align: left;
       align-self: start;
-      // max-width: 440px;
       margin-right: 10px;
       margin-bottom: 0;
     }
@@ -348,6 +334,12 @@
     justify-content: center;
     width: 100%;
     grid-area: btn;
+
+    transition: 0.4s;
+
+    &:hover {
+      color: $colorBlack;
+    }
 
     @include xx-min {
       font-size: 17px;
@@ -407,7 +399,17 @@
 
     @include md-min {
       display: block;
+
     }
+  }
+
+  &__icon {
+    transition: 0.4s;
+
+    &:hover {
+      fill: $colorAccent;
+    }
+
   }
 
   &__telegram {
@@ -415,6 +417,11 @@
 
     @include md-min {
       display: block;
+      transition: 0.4s;
+
+      &:hover {
+        fill: $colorAccent;
+      }
     }
   }
 
