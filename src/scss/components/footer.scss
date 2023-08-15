@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   z-index: 20;
-  overflow-x: hidden;
+  overflow: hidden;
 
   &__decorTree {
     position: absolute;
@@ -81,6 +81,39 @@
 
   &__menuList {
     margin-bottom: 30px;
+    position: relative;
+
+
+
+    &::after {
+      content: "";
+      background: $colorBlue;
+      position: absolute;
+      top: 200px;
+      right: -50px;
+      width: 300px;
+      height: 300px;
+      opacity: 0.6;
+      filter: blur(200.5px);
+      mix-blend-mode: soft-light;
+      border-radius: 60px;
+      z-index: -20;
+
+      @include xs-min {
+        top: 100px;
+        right: 0px;
+      }
+
+      @include lg-min {
+        right: -100px;
+        width: 600px;
+        height: 500px;
+        opacity: 0.4;
+        transform: rotateX(177deg);
+        border-radius: 0;
+      }
+
+    }
 
     @include xx-min {
       columns: 2;
@@ -88,6 +121,7 @@
 
     }
 
+    @include lg-min {}
   }
 
   &__menuItem {
@@ -123,9 +157,41 @@
     color: $colorWhite;
     margin-bottom: 20px;
 
+    position: relative;
+
+    &::after {
+      content: "";
+      background: $colorPink;
+      position: absolute;
+      top: 100px;
+      left: -150px;
+      width: 200px;
+      height: 150px;
+      opacity: 1;
+      filter: blur(200.5px);
+      mix-blend-mode: soft-light;
+      border-radius: 60px;
+      z-index: -20;
+
+      @include xs-min {}
+
+
+      @include md-min {
+        width: 300px;
+        left: -700px;
+        top: 200px;
+      }
+
+      @include lg-min {
+        left: -1400px;
+        width: 400px;
+      }
+
+      @include xl-min {}
+    }
+
     @include xx-min {
       margin-bottom: 24px;
-
     }
 
     @include ul-min {
@@ -243,6 +309,43 @@
     gap: 16px 25px;
     justify-content: center;
     margin-bottom: 26px;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      background: $colorBlueLight;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      opacity: 0.3;
+      filter: blur(127.5px);
+      mix-blend-mode: soft-light;
+      border-radius: 60px;
+      z-index: -20;
+
+      @include md-min {
+        top: -150px;
+        right: 0;
+        width: 400px;
+      }
+
+      @media (min-width:600px) {
+        top: -200px;
+        right: 0px;
+        width: 500px;
+      }
+
+
+      @include lg-min {
+        width: 900px;
+        top: -250px;
+        right: -100px;
+
+      }
+    }
 
     @include xx-min {
       margin-bottom: 36px;
