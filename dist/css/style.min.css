@@ -157,12 +157,7 @@ sup {
 }
 @media (min-width: 375px) {
   .header__container {
-    padding-top: 44px;
-  }
-}
-@media (min-width: 768px) {
-  .header__container {
-    padding-top: 20px;
+    padding-top: 24px;
   }
 }
 @media (min-width: 1440px) {
@@ -187,16 +182,6 @@ sup {
   }
 }
 @media (min-width: 768px) {
-  .header__inner {
-    margin-bottom: 10px;
-  }
-}
-@media (min-width: 990px) {
-  .header__inner {
-    margin-bottom: 30px;
-  }
-}
-@media (min-width: 1440px) {
   .header__inner {
     margin-bottom: 40px;
   }
@@ -245,6 +230,7 @@ sup {
   line-height: 29px;
   letter-spacing: 0.1px;
   grid-area: title;
+  margin-bottom: 16px;
 }
 @media (min-width: 375px) {
   .header__title {
@@ -258,7 +244,8 @@ sup {
     font-size: 32px;
     line-height: 38px;
     text-align: left;
-    align-self: end;
+    align-self: center;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 990px) {
@@ -281,10 +268,11 @@ sup {
   }
 }
 .header__bannerImg {
-  margin-left: -14px;
+  margin-left: -8px;
   max-width: 100%;
   height: auto;
   grid-area: photo;
+  margin-bottom: 20px;
 }
 @media (min-width: 375px) {
   .header__bannerImg {
@@ -296,6 +284,7 @@ sup {
   .header__bannerImg {
     padding-right: 0;
     min-width: 530px;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 990px) {
@@ -327,6 +316,7 @@ sup {
 @media (min-width: 375px) {
   .header__desc {
     font-size: 16px;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 768px) {
@@ -334,23 +324,22 @@ sup {
     font-size: 17px;
     margin-bottom: 20px;
     text-align: left;
-    align-self: center;
+    align-self: start;
     min-width: 415px;
     margin-right: 10px;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 990px) {
   .header__desc {
     font-size: 18px;
     line-height: 26px;
-    margin-bottom: 10px;
   }
 }
 @media (min-width: 1440px) {
   .header__desc {
     font-size: 20px;
     line-height: 28px;
-    margin-bottom: 26px;
   }
 }
 @media (min-width: 1920px) {
@@ -364,7 +353,6 @@ sup {
   color: #ffffff;
   font-size: 15px;
   font-weight: 600;
-  margin: 0 auto;
   display: flex;
   padding: 14px;
   border-radius: 5px;
@@ -385,6 +373,7 @@ sup {
     width: 342px;
     height: 56px;
     margin: 0;
+    align-self: start;
   }
 }
 @media (min-width: 990px) {
