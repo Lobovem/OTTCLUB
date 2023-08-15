@@ -1,21 +1,262 @@
 .header {
-  // position: relative;
-  // z-index: 20;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 20;
+
+  // &__container {
+
+  //   @include xx-min {
+  //   }
+
+  //   @include lg-min {}
+
+  //   @include xl-min {}
+
+  //   @include ul-min {}
+  // }
 
   &__container {
     padding-top: 16px;
+    margin-bottom: 40px;
 
     @include xx-min {
       padding-top: 24px;
     }
 
+    @include lg-min {
+      margin-bottom: 80px;
+    }
+
+    @include xl-min {
+      margin-bottom: 120px;
+    }
+
+    @include ul-min {
+      margin-bottom: 140px;
+    }
+  }
+
+
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    @include xx-min {
+      margin-bottom: 36px;
+    }
+
+    @include md-min {
+      margin-bottom: 40px;
+    }
+
     @include lg-min {}
 
     @include xl-min {}
-
-    @include ul-min {}
   }
 
+  &__bannerInner {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "photo"
+      "desc"
+      "btn";
+
+    @include md-min {
+      grid-template-columns: repeat(2, 62% 38%);
+      grid-template-areas:
+        "title photo"
+        "desc photo"
+        "btn photo";
+    }
+
+    @include lg-min {
+      grid-template-columns: repeat(2, 52% 48%);
+    }
+  }
+
+  &__bannerWrap {
+    grid-area: wrap;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    color: $colorWhite;
+    text-align: center;
+    line-height: 29px;
+    letter-spacing: 0.1px;
+    grid-area: title;
+    margin-bottom: 16px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 270px;
+      height: 270px;
+      background: $colorAccent;
+      opacity: 0.6;
+      filter: blur(127.5px);
+      mix-blend-mode: soft-light;
+      border-radius: 125px;
+    }
+
+    @include xx-min {
+      font-size: 28px;
+      line-height: 34px;
+      letter-spacing: 0.4px;
+    }
+
+    @include md-min {
+      font-size: 32px;
+      line-height: 38px;
+      text-align: left;
+      align-self: center;
+      margin-bottom: 0;
+    }
+
+    @include lg-min {
+      font-size: 38px;
+      line-height: 46px;
+    }
+
+    @include xl-min {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 16px;
+    }
+
+    @include ul-min {
+      font-size: 56px;
+      line-height: 68px;
+    }
+  }
+
+  &__bannerImg {
+
+    margin-left: -8px;
+    max-width: 100%;
+    height: auto;
+    grid-area: photo;
+    margin-bottom: 20px;
+
+
+
+    @include xx-min {
+      margin-left: 0;
+      padding-right: 40px;
+    }
+
+    @include md-min {
+      padding-right: 0;
+      min-width: 530px;
+      margin-bottom: 0;
+    }
+
+    @include lg-min {
+      min-width: 590px;
+      margin-left: 20px;
+    }
+
+    @include xl-min {
+      min-width: 660px;
+    }
+
+    @include ul-min {
+      min-width: 900px;
+    }
+  }
+
+  &__desc {
+    font-size: 15px;
+    color: $colorWhite;
+    text-align: center;
+    line-height: 22px;
+    margin-bottom: 24px;
+    letter-spacing: 0.1px;
+    grid-area: desc;
+    opacity: 0.8;
+
+    @include xx-min {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    @include md-min {
+      font-size: 17px;
+      margin-bottom: 20px;
+      text-align: left;
+      align-self: start;
+      // max-width: 440px;
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+
+    @include lg-min {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    @include xl-min {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    @include ul-min {
+      font-size: 26px;
+      line-height: 36px;
+    }
+  }
+
+  &__btn {
+    background-color: $colorAccent;
+    color: $colorWhite;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    padding: 14px;
+    border-radius: 5px;
+    min-height: 49px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    grid-area: btn;
+
+    @include xx-min {
+      font-size: 17px;
+      min-height: 56px;
+    }
+
+    @include md-min {
+      width: 342px;
+      height: 56px;
+      margin: 0;
+      align-self: start;
+    }
+
+    @include lg-min {
+      font-size: 18px;
+      width: 368px;
+    }
+
+    @include xl-min {
+      font-size: 20px;
+      width: 410px;
+      height: 64px;
+    }
+
+    @include ul-min {
+      font-size: 26px;
+      width: 530px;
+      min-height: 84px;
+    }
+  }
 
 
   &__inner {
