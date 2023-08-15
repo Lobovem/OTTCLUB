@@ -145,6 +145,38 @@ sup {
   position: relative;
   z-index: 10;
 }
+.header__dec {
+  position: absolute;
+  height: 600px;
+  z-index: -20;
+}
+@media (min-width: 420px) {
+  .header__dec {
+    height: 500px;
+  }
+}
+@media (min-width: 375px) {
+  .header__dec {
+    top: 0%;
+    height: 700px;
+  }
+}
+@media (min-width: 768px) {
+  .header__dec {
+    height: auto;
+    top: -90%;
+  }
+}
+@media (min-width: 990px) {
+  .header__dec {
+    top: -50%;
+  }
+}
+@media (min-width: 1440px) {
+  .header__dec {
+    top: -30%;
+  }
+}
 .header__mainBg {
   position: absolute;
   bottom: -30%;
@@ -217,26 +249,6 @@ sup {
   align-items: center;
   margin-bottom: 24px;
 }
-.header__inner::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 170px;
-  height: 170px;
-  background: #2196F3;
-  opacity: 0.6;
-  filter: blur(127.5px);
-  mix-blend-mode: soft-light;
-  border-radius: 60px;
-  z-index: -20;
-}
-@media (min-width: 375px) {
-  .header__inner::after {
-    left: -10%;
-    top: -10%;
-  }
-}
 @media (min-width: 375px) {
   .header__inner {
     margin-bottom: 36px;
@@ -275,86 +287,6 @@ sup {
   letter-spacing: 0.1px;
   grid-area: title;
   margin-bottom: 16px;
-}
-.header__title::after {
-  content: "";
-  position: absolute;
-  z-index: -10;
-  top: -100px;
-  right: 0;
-  width: 400px;
-  height: 350px;
-  background: #FC3232;
-  opacity: 0.6;
-  filter: blur(127.5px);
-  mix-blend-mode: soft-light;
-  border-radius: 125px;
-}
-@media (min-width: 375px) {
-  .header__title::after {
-    right: 0%;
-    top: -150px;
-  }
-}
-@media (min-width: 620px) {
-  .header__title::after {
-    width: 520px;
-    height: 420px;
-    right: 20%;
-  }
-}
-@media (min-width: 768px) {
-  .header__title::after {
-    right: -60%;
-    top: -200px;
-    width: 700px;
-    height: 300px;
-    opacity: 0.5;
-    filter: blur(200.5px);
-  }
-}
-@media (min-width: 1440px) {
-  .header__title::after {
-    width: 670px;
-    height: 500px;
-  }
-}
-.header__title::before {
-  content: "";
-  position: absolute;
-  z-index: -10;
-  top: 0;
-  left: -50%;
-  width: 150px;
-  height: 150px;
-  background: #E507B6;
-  opacity: 0.6;
-  filter: blur(127.5px);
-  mix-blend-mode: soft-light;
-  border-radius: 125px;
-}
-@media (min-width: 768px) {
-  .header__title::before {
-    left: 0;
-    width: 300px;
-    height: 100px;
-    opacity: 0.8;
-    filter: blur(200.5px);
-  }
-}
-@media (min-width: 990px) {
-  .header__title::before {
-    width: 350px;
-    height: 350px;
-    left: -100px;
-  }
-}
-@media (min-width: 1440px) {
-  .header__title::before {
-    width: 450px;
-    height: 250px;
-    top: 20%;
-  }
 }
 @media (min-width: 375px) {
   .header__title {

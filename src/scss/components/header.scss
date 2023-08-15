@@ -3,6 +3,36 @@
   position: relative;
   z-index: 10;
 
+  &__dec {
+    position: absolute;
+    height: 600px;
+
+    z-index: -20;
+
+    @include xs-min {
+      height: 500px;
+
+    }
+
+    @include xx-min {
+      top: 0%;
+      height: 700px;
+    }
+
+    @include md-min {
+      height: auto;
+      top: -90%;
+    }
+
+    @include lg-min {
+      top: -50%;
+    }
+
+    @include xl-min {
+      top: -30%;
+    }
+  }
+
   &__mainBg {
     position: absolute;
     bottom: -30%;
@@ -71,26 +101,7 @@
     align-items: center;
     margin-bottom: 24px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 170px;
-      height: 170px;
-      background: $colorBlue;
-      opacity: 0.6;
-      filter: blur(127.5px);
-      mix-blend-mode: soft-light;
-      border-radius: 60px;
-      z-index: -20;
 
-      @include xx-min {
-        left: -10%;
-        top: -10%;
-
-      }
-    }
 
     @include xx-min {
       margin-bottom: 36px;
@@ -138,86 +149,9 @@
     grid-area: title;
     margin-bottom: 16px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: -10;
-      top: -100px;
-      right: 0;
-      width: 400px;
-      height: 350px;
-      background: $colorAccent;
-      opacity: 0.6;
-      filter: blur(127.5px);
-      mix-blend-mode: soft-light;
-      border-radius: 125px;
-
-      @include xx-min {
-        right: 0%;
-        top: -150px;
-      }
-
-      @include xs-min {
-        // right: 30%;
-      }
-
-      @include sm-min {
-        width: 520px;
-        height: 420px;
-        right: 20%;
 
 
-      }
 
-      @include md-min {
-        right: -60%;
-        top: -200px;
-        width: 700px;
-        height: 300px;
-        opacity: 0.5;
-        filter: blur(200.5px);
-      }
-
-      @include xl-min {
-        width: 670px;
-        height: 500px;
-      }
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -10;
-      top: 0;
-      left: -50%;
-      width: 150px;
-      height: 150px;
-      background: $colorPink;
-      opacity: 0.6;
-      filter: blur(127.5px);
-      mix-blend-mode: soft-light;
-      border-radius: 125px;
-
-      @include md-min {
-        left: 0;
-        width: 300px;
-        height: 100px;
-        opacity: 0.8;
-        filter: blur(200.5px);
-      }
-
-      @include lg-min {
-        width: 350px;
-        height: 350px;
-        left: -100px;
-      }
-
-      @include xl-min {
-        width: 450px;
-        height: 250px;
-        top: 20%;
-      }
-    }
 
     @include xx-min {
       font-size: 28px;
