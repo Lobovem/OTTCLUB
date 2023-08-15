@@ -1762,7 +1762,7 @@ sup {
   text-align: left;
   color: #ffffff;
   border-top: 1px solid rgba(227, 225, 225, 0.137254902);
-  background-color: #131212;
+  background-color: rgba(255, 255, 255, 0);
   font-size: 16px;
   line-height: 22px;
 }
