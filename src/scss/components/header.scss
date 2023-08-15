@@ -21,8 +21,6 @@
       width: 1200px;
       height: 500px;
       bottom: -60%;
-
-
     }
 
 
@@ -30,7 +28,6 @@
       width: 1400px;
       height: 800px;
       bottom: -70%;
-
     }
 
     @include xl-min {
@@ -82,10 +79,32 @@
 
 
   &__inner {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 170px;
+      height: 170px;
+      background: $colorBlue;
+      opacity: 0.6;
+      filter: blur(127.5px);
+      mix-blend-mode: soft-light;
+      border-radius: 60px;
+      z-index: -20;
+
+      @include xx-min {
+        left: -10%;
+        top: -10%;
+
+      }
+    }
 
     @include xx-min {
       margin-bottom: 36px;
@@ -139,15 +158,86 @@
     &::after {
       content: "";
       position: absolute;
+      z-index: -10;
       top: 0;
       right: 0;
-      width: 270px;
-      height: 270px;
+      width: 350px;
+      height: 350px;
       background: $colorAccent;
       opacity: 0.6;
       filter: blur(127.5px);
       mix-blend-mode: soft-light;
       border-radius: 125px;
+
+      @include xx-min {
+        right: 20%;
+        top: 20%;
+      }
+
+      @include xs-min {
+        right: 30%;
+      }
+
+      @include sm-min {
+        width: 420px;
+        height: 420px;
+        right: 20%;
+
+      }
+
+      @include md-min {
+        right: -60%;
+        top: -80%;
+        width: 600px;
+        height: 300px;
+        opacity: 0.5;
+        filter: blur(200.5px);
+      }
+
+      @include lg-min {}
+
+      @include xl-min {
+        width: 670px;
+        height: 500px;
+
+      }
+
+
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -10;
+      top: 0;
+      left: -50%;
+      width: 150px;
+      height: 150px;
+      background: $colorPink;
+      opacity: 0.6;
+      filter: blur(127.5px);
+      mix-blend-mode: soft-light;
+      border-radius: 125px;
+
+      @include md-min {
+        left: 0;
+        width: 300px;
+        height: 100px;
+        opacity: 0.8;
+        filter: blur(200.5px);
+      }
+
+      @include lg-min {
+        width: 350px;
+        height: 350px;
+      }
+
+      @include xl-min {
+        width: 450px;
+        height: 250px;
+        top: 20%;
+
+      }
     }
 
     @include xx-min {
