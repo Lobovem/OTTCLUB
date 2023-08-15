@@ -151,39 +151,39 @@ sup {
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 700px;
-  height: 300px;
+  height: 350px;
   z-index: -10;
 }
 @media (min-width: 420px) {
   .header__mainBg {
     min-width: 800px;
-    height: 400px;
+    height: 500px;
   }
 }
 @media (min-width: 768px) {
   .header__mainBg {
     width: 1200px;
-    height: 500px;
-    bottom: -60%;
+    height: 600px;
+    bottom: -50%;
   }
 }
 @media (min-width: 990px) {
   .header__mainBg {
-    width: 1400px;
-    height: 800px;
+    width: 1700px;
+    height: 900px;
     bottom: -70%;
   }
 }
 @media (min-width: 1440px) {
   .header__mainBg {
-    width: 15000px;
-    height: 850px;
+    width: 2000px;
+    height: 1000px;
   }
 }
 @media (min-width: 1920px) {
   .header__mainBg {
-    width: 2100px;
-    height: 1100px;
+    width: 2300px;
+    height: 1300px;
   }
 }
 .header__container {
@@ -280,9 +280,9 @@ sup {
   content: "";
   position: absolute;
   z-index: -10;
-  top: 0;
+  top: -100px;
   right: 0;
-  width: 350px;
+  width: 400px;
   height: 350px;
   background: #FC3232;
   opacity: 0.6;
@@ -292,18 +292,13 @@ sup {
 }
 @media (min-width: 375px) {
   .header__title::after {
-    right: 20%;
-    top: 20%;
-  }
-}
-@media (min-width: 420px) {
-  .header__title::after {
-    right: 30%;
+    right: 0%;
+    top: -150px;
   }
 }
 @media (min-width: 620px) {
   .header__title::after {
-    width: 420px;
+    width: 520px;
     height: 420px;
     right: 20%;
   }
@@ -311,8 +306,8 @@ sup {
 @media (min-width: 768px) {
   .header__title::after {
     right: -60%;
-    top: -80%;
-    width: 600px;
+    top: -200px;
+    width: 700px;
     height: 300px;
     opacity: 0.5;
     filter: blur(200.5px);
@@ -351,6 +346,7 @@ sup {
   .header__title::before {
     width: 350px;
     height: 350px;
+    left: -100px;
   }
 }
 @media (min-width: 1440px) {
@@ -1134,13 +1130,13 @@ sup {
 }
 @media (min-width: 768px) {
   .channels__title::after {
-    transform: translate(20%, -50%);
+    transform: translate(20%, -20%);
     width: 500px;
   }
 }
 @media (min-width: 990px) {
   .channels__title::after {
-    transform: translate(30%, -50%);
+    transform: translate(30%, -20%);
     height: 500px;
     opacity: 0.4;
     width: 700px;

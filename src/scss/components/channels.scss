@@ -90,12 +90,12 @@
       z-index: -20;
 
       @include md-min {
-        transform: translate(20%, -50%);
+        transform: translate(20%, -20%);
         width: 500px;
       }
 
       @include lg-min {
-        transform: translate(30%, -50%);
+        transform: translate(30%, -20%);
         height: 500px;
         opacity: 0.4;
         width: 700px;
