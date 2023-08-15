@@ -1,19 +1,26 @@
-.header {
-  // position: relative;
-  // z-index: 20;
+.banner {
+  overflow-x: hidden;
+  position: relative;
+  z-index: 20;
 
   &__container {
-    padding-top: 16px;
+    margin-bottom: 80px;
 
     @include xx-min {
       padding-top: 24px;
     }
 
-    @include lg-min {}
+    @include lg-min {
+      margin-bottom: 80px;
+    }
 
-    @include xl-min {}
+    @include xl-min {
+      margin-bottom: 120px;
+    }
 
-    @include ul-min {}
+    @include ul-min {
+      margin-bottom: 140px;
+    }
   }
 
 
@@ -35,23 +42,6 @@
     @include lg-min {}
 
     @include xl-min {}
-  }
-
-
-  &__logoImg {
-    max-width: 56px;
-
-    @include md-min {
-      max-width: 64px;
-    }
-
-    @include lg-min {
-      max-width: 72px;
-    }
-
-    @include ul-min {
-      min-width: 96px;
-    }
   }
 
   &__bannerInner {
@@ -234,67 +224,6 @@
       font-size: 26px;
       width: 530px;
       min-height: 84px;
-    }
-  }
-}
-
-.actions {
-
-  display: flex;
-  gap: 24px;
-  align-items: center;
-
-  &__facebook {
-    display: none;
-
-    @include md-min {
-      display: block;
-    }
-  }
-
-  &__telegram {
-    display: none;
-
-    @include md-min {
-      display: block;
-    }
-  }
-
-  &__registration {
-    color: $colorWhite;
-    font-weight: 600;
-    display: none;
-
-    @include md-min {
-      display: block;
-      padding-left: 24px;
-    }
-
-    @include ul-min {
-      font-size: 20px;
-    }
-  }
-
-  &__enter {
-    font-weight: 500;
-    min-height: 40px;
-    border-radius: 5px;
-    border: 2px solid $colorWhite;
-    padding: 10px;
-    color: $colorWhite;
-    min-width: 96px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @include md-min {
-      min-height: 44px;
-    }
-
-    @include ul-min {
-      font-size: 20px;
-      min-height: 60px;
-      width: 126px;
     }
   }
 }
