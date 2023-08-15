@@ -126,6 +126,7 @@
 
   &__menuItem {
     color: $colorWhite;
+    cursor: pointer;
     font-size: 14px;
     line-height: 20px;
     opacity: 0.8;
@@ -296,6 +297,7 @@
   &__social {
     max-width: 32px;
     height: auto;
+    cursor: pointer;
 
     @include ul-min {
       max-width: 40px;

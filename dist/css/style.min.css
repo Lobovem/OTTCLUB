@@ -575,6 +575,10 @@ sup {
   color: #ffffff;
   font-weight: 600;
   display: none;
+  transition: 0.4s;
+}
+.actions__registration:hover {
+  color: #FC3232;
 }
 @media (min-width: 768px) {
   .actions__registration {
@@ -598,6 +602,11 @@ sup {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.4s;
+}
+.actions__enter:hover {
+  color: #FC3232;
+  border: 2px solid #FC3232;
 }
 @media (min-width: 768px) {
   .actions__enter {
@@ -2009,6 +2018,7 @@ sup {
 }
 .footer__menuItem {
   color: #ffffff;
+  cursor: pointer;
   font-size: 14px;
   line-height: 20px;
   opacity: 0.8;
@@ -2169,6 +2179,7 @@ sup {
 .footer__social {
   max-width: 32px;
   height: auto;
+  cursor: pointer;
 }
 @media (min-width: 1920px) {
   .footer__social {

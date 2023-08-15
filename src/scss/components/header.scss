@@ -422,6 +422,11 @@
     color: $colorWhite;
     font-weight: 600;
     display: none;
+    transition: 0.4s;
+
+    &:hover {
+      color: $colorAccent;
+    }
 
     @include md-min {
       display: block;
@@ -444,6 +449,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: 0.4s;
+
+    &:hover {
+      color: $colorAccent;
+      border: 2px solid $colorAccent;
+    }
 
     @include md-min {
       min-height: 44px;
