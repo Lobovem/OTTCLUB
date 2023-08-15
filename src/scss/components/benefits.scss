@@ -1,42 +1,5 @@
 .benefits {
-  position: relative;
-  z-index: 10;
 
-  &__mainBg {
-    position: absolute;
-    top: -30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 800px;
-    height: 400px;
-    z-index: -10;
-
-    @include md-min {
-      top: -52%;
-      min-width: 1000px;
-      height: 500px;
-
-    }
-
-
-    @include lg-min {
-      width: 12000px;
-      height: 750px;
-    }
-
-    @include xl-min {
-      width: 15000px;
-      height: 850px;
-      top: -60%;
-
-    }
-
-    @include ul-min {
-      width: 2100px;
-      height: 1100px;
-    }
-
-  }
 
   &__container {
     position: relative;

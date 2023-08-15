@@ -1,7 +1,50 @@
 .header {
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
-  z-index: 20;
+  z-index: 10;
+
+  &__mainBg {
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 700px;
+    height: 300px;
+    z-index: -10;
+
+    @include xs-min {
+      min-width: 800px;
+      height: 400px;
+    }
+
+    @include md-min {
+      width: 1200px;
+      height: 500px;
+      bottom: -60%;
+
+
+    }
+
+
+    @include lg-min {
+      width: 1400px;
+      height: 800px;
+      bottom: -70%;
+
+    }
+
+    @include xl-min {
+      width: 15000px;
+      height: 850px;
+
+    }
+
+    @include ul-min {
+      width: 2100px;
+      height: 1100px;
+    }
+
+  }
 
   // &__container {
 

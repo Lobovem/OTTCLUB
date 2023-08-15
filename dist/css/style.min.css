@@ -9,7 +9,7 @@
 /* xx */
 /* ux */
 .body {
-  background-color: #131212;
+  background-color: #959595;
 }
 .body.lock {
   overflow: hidden;
@@ -149,9 +149,50 @@ sup {
 	*/
 /** Подключение стилей отдельных блоков и секций */
 .header {
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
-  z-index: 20;
+  z-index: 10;
+}
+.header__mainBg {
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 700px;
+  height: 300px;
+  z-index: -10;
+}
+@media (min-width: 420px) {
+  .header__mainBg {
+    min-width: 800px;
+    height: 400px;
+  }
+}
+@media (min-width: 768px) {
+  .header__mainBg {
+    width: 1200px;
+    height: 500px;
+    bottom: -60%;
+  }
+}
+@media (min-width: 990px) {
+  .header__mainBg {
+    width: 1400px;
+    height: 800px;
+    bottom: -70%;
+  }
+}
+@media (min-width: 1440px) {
+  .header__mainBg {
+    width: 15000px;
+    height: 850px;
+  }
+}
+@media (min-width: 1920px) {
+  .header__mainBg {
+    width: 2100px;
+    height: 1100px;
+  }
 }
 .header__container {
   padding-top: 16px;
@@ -810,45 +851,6 @@ sup {
   }
 }
 
-.benefits {
-  position: relative;
-  z-index: 10;
-}
-.benefits__mainBg {
-  position: absolute;
-  top: -30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 800px;
-  height: 400px;
-  z-index: -10;
-}
-@media (min-width: 768px) {
-  .benefits__mainBg {
-    top: -52%;
-    min-width: 1000px;
-    height: 500px;
-  }
-}
-@media (min-width: 990px) {
-  .benefits__mainBg {
-    width: 12000px;
-    height: 750px;
-  }
-}
-@media (min-width: 1440px) {
-  .benefits__mainBg {
-    width: 15000px;
-    height: 850px;
-    top: -60%;
-  }
-}
-@media (min-width: 1920px) {
-  .benefits__mainBg {
-    width: 2100px;
-    height: 1100px;
-  }
-}
 .benefits__container {
   position: relative;
   border: 2px solid #FF1F1F;
@@ -894,7 +896,7 @@ sup {
   max-width: 80px;
   border: 2px solid #FF1F1F;
   clip-path: circle(72% at 50% 0);
-  background-color: #131212;
+  background-color: #959595;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1836,7 +1838,7 @@ sup {
   text-align: left;
   color: #ffffff;
   border-top: 1px solid rgba(227, 225, 225, 0.137254902);
-  background-color: #131212;
+  background-color: #959595;
   font-size: 16px;
   line-height: 22px;
 }
