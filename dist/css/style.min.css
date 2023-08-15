@@ -1038,6 +1038,12 @@ sup {
   position: relative;
   z-index: 20;
 }
+.channels__dec {
+  position: absolute;
+  top: -50%;
+  z-index: -20;
+  height: 200%;
+}
 .channels__decorWeb {
   position: absolute;
   z-index: -20;
@@ -1112,35 +1118,6 @@ sup {
   line-height: 34px;
   color: #ffffff;
   margin-bottom: 10px;
-}
-.channels__title::after {
-  content: "";
-  background: #2196F3;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
-  opacity: 0.6;
-  filter: blur(200.5px);
-  mix-blend-mode: soft-light;
-  border-radius: 60px;
-  z-index: -20;
-}
-@media (min-width: 768px) {
-  .channels__title::after {
-    transform: translate(20%, -20%);
-    width: 500px;
-  }
-}
-@media (min-width: 990px) {
-  .channels__title::after {
-    transform: translate(30%, -20%);
-    height: 500px;
-    opacity: 0.4;
-    width: 700px;
-  }
 }
 @media (min-width: 375px) {
   .channels__title {
@@ -1310,36 +1287,6 @@ sup {
   gap: 18px;
   margin-bottom: 18px;
 }
-.channels__wrap::after {
-  content: "";
-  background: #E507B6;
-  position: absolute;
-  top: -200px;
-  left: -50%;
-  width: 300px;
-  height: 300px;
-  opacity: 0.6;
-  filter: blur(200.5px);
-  mix-blend-mode: soft-light;
-  border-radius: 60px;
-  z-index: -20;
-}
-@media (min-width: 420px) {
-  .channels__wrap::after {
-    left: -50%;
-    width: 400px;
-  }
-}
-@media (min-width: 768px) {
-  .channels__wrap::after {
-    width: 400px;
-  }
-}
-@media (min-width: 990px) {
-  .channels__wrap::after {
-    left: -10%;
-  }
-}
 @media (min-width: 375px) {
   .channels__wrap {
     margin-bottom: 24px;
@@ -1418,37 +1365,6 @@ sup {
   line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
-}
-.channels__showAll::after {
-  content: "";
-  background: #FC3232;
-  position: absolute;
-  top: -150px;
-  right: -50%;
-  width: 400px;
-  height: 200px;
-  opacity: 0.6;
-  filter: blur(200.5px);
-  mix-blend-mode: soft-light;
-  border-radius: 60px;
-  z-index: -20;
-}
-@media (min-width: 420px) {
-  .channels__showAll::after {
-    width: 500px;
-  }
-}
-@media (min-width: 768px) {
-  .channels__showAll::after {
-    top: -400px;
-    right: 0%;
-    height: 400px;
-  }
-}
-@media (min-width: 1440px) {
-  .channels__showAll::after {
-    right: 30%;
-  }
 }
 .channels__icon {
   position: absolute;
