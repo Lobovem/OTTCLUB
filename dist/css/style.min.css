@@ -9,7 +9,7 @@
 /* xx */
 /* ux */
 .body {
-  background-color: #131212;
+  background-color: #959595;
 }
 .body.lock {
   overflow: hidden;
@@ -988,7 +988,7 @@ sup {
   max-width: 80px;
   border: 2px solid #FF1F1F;
   clip-path: circle(72% at 50% 0);
-  background-color: #131212;
+  background-color: #959595;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1224,6 +1224,44 @@ sup {
 
 .channels {
   overflow: hidden;
+  position: relative;
+  z-index: 20;
+}
+.channels__decorWeb {
+  position: absolute;
+  z-index: -20;
+  top: 30%;
+  left: -5px;
+  width: 190px;
+  height: 350px;
+}
+@media (min-width: 768px) {
+  .channels__decorWeb {
+    width: 290px;
+    height: 540px;
+    top: 25%;
+  }
+}
+@media (min-width: 990px) {
+  .channels__decorWeb {
+    width: 420px;
+    height: 750px;
+    top: 0;
+    left: -20px;
+  }
+}
+@media (min-width: 1440px) {
+  .channels__decorWeb {
+    height: 900px;
+    width: 500px;
+  }
+}
+@media (min-width: 1920px) {
+  .channels__decorWeb {
+    height: 1000px;
+    width: 650px;
+    left: -60px;
+  }
 }
 .channels__container {
   padding-top: 100px;
@@ -1489,6 +1527,7 @@ sup {
 }
 .channels__showAll {
   position: relative;
+  display: block;
   cursor: pointer;
   text-align: right;
   padding-right: 30px;
@@ -1930,7 +1969,7 @@ sup {
   text-align: left;
   color: #ffffff;
   border-top: 1px solid rgba(227, 225, 225, 0.137254902);
-  background-color: #131212;
+  background-color: #959595;
   font-size: 16px;
   line-height: 22px;
 }

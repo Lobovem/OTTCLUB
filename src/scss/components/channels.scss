@@ -1,5 +1,42 @@
 .channels {
   overflow: hidden;
+  position: relative;
+  z-index: 20;
+
+  &__decorWeb {
+    position: absolute;
+    z-index: -20;
+    top: 30%;
+    left: -5px;
+    width: 190px;
+    height: 350px;
+
+    @include md-min {
+      width: 290px;
+      height: 540px;
+      top: 25%;
+
+    }
+
+    @include lg-min {
+      width: 420px;
+      height: 750px;
+      top: 0;
+      left: -20px;
+
+    }
+
+    @include xl-min {
+      height: 900px;
+      width: 500px;
+    }
+
+    @include ul-min {
+      height: 1000px;
+      width: 650px;
+      left: -60px;
+    }
+  }
 
   &__container {
     padding-top: 100px;
@@ -274,6 +311,7 @@
 
   &__showAll {
     position: relative;
+    display: block;
     cursor: pointer;
     text-align: right;
     padding-right: 30px;
