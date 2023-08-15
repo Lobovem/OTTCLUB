@@ -1,4 +1,69 @@
 .footer {
+  position: relative;
+  z-index: 20;
+  overflow-x: hidden;
+
+  &__decorTree {
+    position: absolute;
+    bottom: 10px;
+    left: -180px;
+    z-index: -20;
+    height: 400px;
+
+    @media (min-width: 500px) {
+      height: 330px;
+      left: -100px;
+    }
+
+    @include md-min {
+      left: -150px;
+      height: 430px;
+    }
+
+    @include lg-min {
+      left: -50px;
+      height: 500px;
+
+    }
+
+    @include ul-min {
+      height: 600px;
+    }
+  }
+
+  &__decorGrass {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    z-index: -20;
+
+    @include lg-min {
+      height: 96px;
+    }
+  }
+
+  &__decorPamb {
+    position: absolute;
+    bottom: 24px;
+    z-index: -10;
+    right: -168px;
+    height: 75px;
+
+    @include md-min {
+      right: 20px;
+
+    }
+
+    @include lg-min {
+      bottom: 40px;
+      height: 90px;
+    }
+
+    @include lg-min {
+      right: 40px;
+    }
+  }
 
   &__container {}
 
