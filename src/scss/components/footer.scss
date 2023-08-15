@@ -1,5 +1,89 @@
 .footer {
 
-  // .footer__container
   &__container {}
+
+  &__menu {}
+
+
+  &__menuList {
+    margin-bottom: 30px;
+  }
+
+  &__menuItem {
+    color: $colorWhite;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.8;
+    margin-bottom: 8px;
+  }
+
+  &__contactsTitle {
+    font-weight: 600;
+    color: $colorWhite;
+    margin-bottom: 20px;
+
+  }
+
+  &__contacts {}
+
+  &__tel {
+    color: $colorWhite;
+    font-size: 14px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+    display: block;
+
+  }
+
+  &__email {
+    color: $colorWhite;
+    line-height: 20px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    display: block;
+
+  }
+
+  &__chat {}
+
+  &__chatTitle {
+    color: $colorWhite;
+    opacity: 0.8;
+    margin-bottom: 12px;
+
+  }
+
+  &__chatWrap {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  &__social {
+    max-width: 32px;
+    height: auto;
+  }
+
+  &_iconBanks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 25px;
+    justify-content: center;
+    margin-bottom: 26px;
+  }
+
+  &__banks {
+    max-height: 32px;
+  }
+
+  &__copyright {}
+
+  &__copyrightText {
+    color: $colorWhite;
+    opacity: 0.8;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 2px;
+  }
 }
